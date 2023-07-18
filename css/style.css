@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,700&display=swap");
+/*Reseteo de estilos*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+ul {
+  list-style: none; }
+
+/*Estilos footer*/
+ul {
+  list-style: none; }
+
+footer {
+  border-top: 2px solid #000;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap; }
+  footer .box__footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%; }
+    footer .box__footer__redes__contacto {
+      flex-direction: column;
+      text-decoration: underline;
+      margin-bottom: 1rem; }
+    footer .box__footer__redes__icono {
+      width: 18px; }
+    footer .box__footer__mapa {
+      display: flex;
+      width: 400px;
+      height: 100%;
+      justify-content: left; }
+  footer .parrafo {
+    font-size: 1rem;
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    text-align: center; }
+
+header {
+  display: flex;
+  flex-wrap: wrap; }
+  header nav {
+    max-width: 100%;
+    margin: auto;
+    height: auto;
+    background-color: white;
+    margin-top: 2rem;
+    align-items: end;
+    justify-content: end; }
+    header nav .navbar {
+      list-style: none;
+      justify-content: end; }
+      header nav .navbar__item {
+        font-size: 2rem; }
+        header nav .navbar__item__link {
+          text-decoration: none;
+          color: black;
+          padding: 15px 20px; }
+      header nav .navbar__item:hover {
+        background-color: #5e9188; }
+
+main {
+  display: flex;
+  flex-wrap: wrap; }
+  main .banner {
+    display: flex;
+    flex-wrap: wrap; }
+    main .banner__bempresa {
+      width: 100%;
+      height: 315px; }
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  section .mapa {
+    width: 700px;
+    height: 350px;
+    padding: 3rem; }
+  section .formulario {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    padding: 3rem; }
+  section .btn-verde {
+    background-color: #5e9188;
+    color: black; }
+
+main {
+  display: flex;
+  flex-wrap: wrap; }
+  main .banner {
+    display: flex;
+    flex-wrap: wrap; }
+    main .banner__bempresa {
+      width: 100%;
+      height: 315px; }
+
+section {
+  display: flex;
+  flex-wrap: wrap; }
+  section .tituloe {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline; }
+  section .parrafoe {
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    font-size: large;
+    font-style: normal; }
+
+main {
+  display: flex;
+  flex-wrap: wrap; }
+  main .banner {
+    display: flex;
+    flex-wrap: wrap; }
+    main .banner__bempresa {
+      width: 100%;
+      height: 315px; }
+
+section {
+  display: flex;
+  flex-wrap: wrap; }
+  section .card-img-top {
+    width: 450px;
+    height: 500px; }
+
+@media (max-width: 575.98px) {
+  .card-group {
+    display: flex;
+    flex-direction: column; } }
+
+/* Estilos Small */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card-group {
+    display: flex;
+    flex-direction: column; } }
+
+/* Estilos Medium) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-group {
+    display: flex;
+    flex-direction: column; } }
+
+/* Estilos Large  */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .card-group {
+    display: flex;
+    flex-direction: row; } }
+
+/* Estilos Extra Large */
+@media (min-width: 1200px) {
+  .card-group {
+    display: flex;
+    flex-direction: row; } }
+
+main {
+  display: flex;
+  flex-wrap: wrap; }
+
+section {
+  display: flex;
+  flex-wrap: wrap; }
+  section .img {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%; }
+    section .img__trabajador {
+      width: 600px;
+      height: 600px;
+      padding: 5rem; }
+      section .img__trabajador__texto {
+        color: #5e9188;
+        font-size: xx-large;
+        font-family: 'Roboto', sans-serif;
+        text-decoration: solid; }
+  section .logos__marcas {
+    align-items: center;
+    justify-content: space-around; }
+    section .logos__marcas__imagen {
+      width: 450px;
+      height: 315px; }
+
+main {
+  display: flex;
+  flex-wrap: wrap; }
+  main .banner {
+    display: flex;
+    flex-wrap: wrap; }
+    main .banner__bempresa {
+      width: 100%;
+      height: 315px; }
+
+section {
+  display: flex;
+  flex-wrap: wrap; }
+  section .card-img-top {
+    width: 450px;
+    height: 500px; }
+
+@media (max-width: 575.98px) {
+  .card-group {
+    display: flex;
+    flex-direction: column; } }
+
+/* Estilos Small */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card-group {
+    display: flex;
+    flex-direction: column; } }
+
+/* Estilos Medium) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-group {
+    display: flex;
+    flex-direction: column; } }
+
+/* Estilos Large  */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .card-group {
+    display: flex;
+    flex-direction: row; } }
+
+/* Estilos Extra Large */
+@media (min-width: 1200px) {
+  .card-group {
+    display: flex;
+    flex-direction: row; } }
+
+main {
+  display: flex;
+  flex-wrap: wrap; }
+  main .banner {
+    width: 100%;
+    height: 315px; }

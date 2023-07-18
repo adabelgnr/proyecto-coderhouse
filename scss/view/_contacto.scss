@@ -1,0 +1,32 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    .banner{
+        display: flex;
+        flex-wrap: wrap;
+        &__bempresa{
+            width: 100%;
+            height: 315px;
+        }
+    }
+}
+
+section{
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .mapa{
+        width: 700px;
+        height: 350px;
+        padding: 3rem;
+    }
+    .formulario{
+        font-family:'Roboto', sans-serif;
+        font-size: large;
+        padding: 3rem;
+    }
+    .btn-verde {
+        background-color:  #5e9188;
+        color:black;
+    }
+}

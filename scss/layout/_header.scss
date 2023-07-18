@@ -1,0 +1,28 @@
+header{
+    display: flex;
+    flex-wrap: wrap;
+    nav{
+        max-width: 100%;
+        margin: auto;
+        height: auto;
+        background-color: white;
+        margin-top: 2rem;
+        align-items: end;
+        justify-content: end;
+        .navbar{
+            list-style: none;
+            justify-content: end;
+       
+        &__item{
+           font-size: 2rem;
+           &__link{
+            text-decoration: none;
+            color: black;
+            padding: 15px 20px;
+           }
+        }&__item:hover{
+            background-color: #5e9188;
+        }
+      }  
+    }
+}

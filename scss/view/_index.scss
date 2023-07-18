@@ -1,0 +1,39 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    .img{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+            &__trabajador{
+             width: 600px;
+             height: 600px;
+             padding: 5rem;
+             &__texto{
+                color: #5e9188;
+                font-size: xx-large;
+                font-family:'Roboto', sans-serif;
+                text-decoration:solid;
+             }  
+    }  
+}
+.logos__marcas{
+    align-items: center;
+    justify-content: space-around;
+   &__imagen{
+    width: 450px;
+    height: 315px;
+   }
+}
+
+}

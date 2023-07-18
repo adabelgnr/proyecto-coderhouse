@@ -1,0 +1,63 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    .banner{
+        display: flex;
+        flex-wrap: wrap;
+        &__bempresa{
+            width: 100%;
+            height: 315px;
+        }
+    }
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    .card-img-top{
+        width: 450px;
+        height: 500px;
+
+    }
+
+    }
+
+    @media (max-width: 575.98px) {
+        .card-group {
+            display: flex;
+            flex-direction: column;
+        }
+      }
+      
+      /* Estilos Small */
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        .card-group {
+            display: flex;
+            flex-direction: column;
+        }
+      }
+      
+      /* Estilos Medium) */
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .card-group {
+            display: flex;
+            flex-direction: column;
+        }
+      }
+      
+      /* Estilos Large  */
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .card-group {
+            display: flex;
+            flex-direction: row;
+        }
+      }
+      
+      /* Estilos Extra Large */
+      @media (min-width: 1200px) {
+        .card-group {
+            display: flex;
+            flex-direction: row; 
+        }
+      }
+    
