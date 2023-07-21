@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,700&display=swap");
 /*Reseteo de estilos*/
 * {
@@ -10,6 +11,9 @@ html {
 
 ul {
   list-style: none; }
+
+img {
+  width: 100%; }
 
 /*Estilos footer*/
 ul {
@@ -50,10 +54,10 @@ header {
   display: flex;
   flex-wrap: wrap; }
   header nav {
-    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     margin: auto;
     height: auto;
-    background-color: white;
     margin-top: 2rem;
     align-items: end;
     justify-content: end; }
@@ -68,6 +72,12 @@ header {
           padding: 15px 20px; }
       header nav .navbar__item:hover {
         background-color: #5e9188; }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    /* Alineación horizontal centrada */ } }
 
 main {
   display: flex;
@@ -130,42 +140,61 @@ main {
 section {
   display: flex;
   flex-wrap: wrap; }
-  section .card-img-top {
-    width: 450px;
-    height: 500px; }
+  section .container {
+    width: 100%;
+    display: flex; }
+    section .container .card {
+      width: 100%;
+      margin: 20px;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+      transition: all 400ms ease; }
+    section .container .card:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+      transform: translateY(-3%);
+      background-color: #5e9188; }
+    section .container .card img {
+      width: 100%;
+      height: 450px; }
+    section .container .contenido {
+      padding: 15px;
+      text-align: center; }
 
 @media (max-width: 575.98px) {
-  .card-group {
+  .container {
     display: flex;
     flex-direction: column; } }
 
 /* Estilos Small */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .card-group {
+  .container {
     display: flex;
     flex-direction: column; } }
 
 /* Estilos Medium) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .card-group {
+  .container {
     display: flex;
     flex-direction: column; } }
 
 /* Estilos Large  */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .card-group {
+  .container {
     display: flex;
     flex-direction: row; } }
 
 /* Estilos Extra Large */
 @media (min-width: 1200px) {
-  .card-group {
+  .container {
     display: flex;
     flex-direction: row; } }
 
 main {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  width: 100%; }
 
 section {
   display: flex;
@@ -205,36 +234,54 @@ main {
 section {
   display: flex;
   flex-wrap: wrap; }
-  section .card-img-top {
-    width: 450px;
-    height: 500px; }
+  section .containerindustrias {
+    width: 100%;
+    display: flex; }
+    section .containerindustrias .card {
+      width: 100%;
+      margin: 20px;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+      transition: all 400ms ease; }
+    section .containerindustrias .card:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+      transform: translateY(-3%);
+      background-color: #5e9188; }
+    section .containerindustrias .card img {
+      width: 100%;
+      height: 320px; }
+    section .containerindustrias .contenido {
+      padding: 15px;
+      text-align: center; }
 
 @media (max-width: 575.98px) {
-  .card-group {
+  .containerindustrias {
     display: flex;
     flex-direction: column; } }
 
 /* Estilos Small */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .card-group {
+  .containerindustrias {
     display: flex;
     flex-direction: column; } }
 
 /* Estilos Medium) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .card-group {
+  .containerindustrias {
     display: flex;
     flex-direction: column; } }
 
 /* Estilos Large  */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .card-group {
+  .containerindustrias {
     display: flex;
     flex-direction: row; } }
 
 /* Estilos Extra Large */
 @media (min-width: 1200px) {
-  .card-group {
+  .containerindustrias {
     display: flex;
     flex-direction: row; } }
 

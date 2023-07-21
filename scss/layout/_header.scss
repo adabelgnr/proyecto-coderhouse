@@ -2,10 +2,10 @@ header{
     display: flex;
     flex-wrap: wrap;
     nav{
-        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
         margin: auto;
-        height: auto;
-        background-color: white;
+         height: auto;
         margin-top: 2rem;
         align-items: end;
         justify-content: end;
@@ -24,5 +24,13 @@ header{
             background-color: #5e9188;
         }
       }  
+  
     }
 }
+
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center; /* Alineación horizontal centrada */
+    }
+}  

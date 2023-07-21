@@ -11,6 +11,10 @@ html{
 ul{
     list-style: none;
 }
+img{
+    width: 100%;
+}
+
 @import"./layout/footer";
 @import"./layout/header";
 @import"./view/contacto";
