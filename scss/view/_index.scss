@@ -5,7 +5,12 @@ main{
 }
 
 
-
+#carouselExampleInterval{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
 
 
 
@@ -19,9 +24,9 @@ section{
         justify-content: space-around;
         width: 100%;
             &__trabajador{
-             width: 600px;
-             height: 600px;
-             padding: 5rem;
+             width:70%;
+             height:70%;
+             padding: 3rem;
              &__texto{
                 color: #5e9188;
                 font-size: xx-large;
