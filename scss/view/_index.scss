@@ -25,8 +25,6 @@ section{
         width: 100%;
             &__trabajador{
              width:70%;
-             height:70%;
-             padding: 3rem;
              &__texto{
                 color: #5e9188;
                 font-size: xx-large;
@@ -37,11 +35,50 @@ section{
 }
 .logos__marcas{
     align-items: center;
-    justify-content: space-around;
+    justify-content:space-around;
    &__imagen{
-    width: 450px;
-    height: 315px;
+    width: 24%
    }
 }
 
 }
+
+/*MEDIA QUERY*/
+@media (max-width: 575.98px) {
+    .logos__marcas {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  
+  /* Estilos Small */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .logos__marcas  {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  
+  /* Estilos Medium) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .logos__marcas {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  
+  /* Estilos Large  */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .logos__marcas{
+        display: flex;
+        flex-direction: row;
+    }
+  }
+  
+  /* Estilos Extra Large */
+  @media (min-width: 1200px) {
+    .logos__marcas {
+        display: flex;
+        flex-direction: row; 
+    }
+  }

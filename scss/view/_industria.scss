@@ -1,3 +1,5 @@
+@import"../variables/mixin";
+
 main{
     display: flex;
     flex-wrap: wrap;
@@ -16,7 +18,7 @@ section{
     display: flex;
     flex-wrap: wrap;
 
-    .containerindustrias {
+    .container {
         width: 100%;
         display:flex;
         .card{
@@ -45,43 +47,10 @@ section{
       }
     }
         
-
-    @media (max-width: 575.98px) {
-        .containerindustrias  {
-            display: flex;
-            flex-direction: column;
-        }
-      }
-      
-      /* Estilos Small */
-      @media (min-width: 576px) and (max-width: 767.98px) {
-        .containerindustrias  {
-            display: flex;
-            flex-direction: column;
-        }
-      }
-      
-      /* Estilos Medium) */
-      @media (min-width: 768px) and (max-width: 991.98px) {
-        .containerindustrias  {
-            display: flex;
-            flex-direction: column;
-        }
-      }
-      
-      /* Estilos Large  */
-      @media (min-width: 992px) and (max-width: 1199.98px) {
-        .containerindustrias  {
-            display: flex;
-            flex-direction: row;
-        }
-      }
-      
-      /* Estilos Extra Large */
-      @media (min-width: 1200px) {
-        .containerindustrias {
-            display: flex;
-            flex-direction: row; 
-        }
-      }
-    
+ /*MEDIA QUERY*/
+ @include xs;
+ @include small;
+ @include medium;
+ @include large;
+ @include xlarge;
+ 
