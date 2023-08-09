@@ -1,3 +1,4 @@
+
 main{
     display: flex;
     flex-wrap: wrap;
@@ -17,21 +18,19 @@ main{
     align-items: center;
     font-size: xx-large;
     text-align:center;
-    padding: 10rem;
-    width: 95%;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    width: 90%;
+    margin:0 auto;
     background-color: #fdca00;
     .tituloe{
         font-family:'Roboto', sans-serif;
         text-decoration: underline;
+        text-align: center;
     }
     .parrafoe{
         font-family:'Roboto', sans-serif;
         font-size: large;
         font-style: normal;
-        text-align:center;
+        text-align: center;
     }
 }
+
