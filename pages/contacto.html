@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Surseg</title>
+    <meta name="description" content="Medios para ponerte en contacto con nosotros">
+  <meta name="keywords" content="Contacto, telefono, mail, correo electronico, direccioon">
+    <title>Surseg - Contacto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
@@ -14,7 +16,7 @@
     <!--Encabezado y barra de navegacion -->
     <header>
       <a href="../index.html">
-        <img src="../img/LogoS.png" alt="">
+        <img src="../img/LogoS.png" alt="Logo Surseg">
       </a>
       <nav class="navbar navbar-expand-lg bg-transparent">
           <div class="container-fluid">
@@ -36,8 +38,7 @@
               <a class="navbar__item__link dropdown-toggle" href="../pages/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
               <ul class="navbar__item dropdown-menu">
                 <li><a class="dropdown-item" href="../pages/guantes.html">Guantes</a></li>
-               <li><a class="dropdown-item" href="#">Indumentaria</a></li>
-              <li><a class="dropdown-item" href="#">Auditiva</a></li>
+             
               </ul>
               </li>
   
@@ -57,23 +58,27 @@
 
     <!-- Inicio de Banner -->
     <main class="banner">
-        <img class="banner__bempresa"src="../img/SBanner.jpg" alt="">
+        <img class="banner__bempresa"src="../img/SBanner.jpg" alt="Banner Empresa">
     </main>
     <!-- Fin de banner  -->
 
     <!-- Inicio secciones-->
 
-    <section>
-        <div>
-            <iframe class="mapa"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.124737001229!2d-58.37879448476706!3d-34.72725008042763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd523ac4ffe3%3A0xf53cf2e5d78d2401!2sSurseg!5e0!3m2!1ses-419!2sar!4v1685813500620!5m2!1ses-419!2sar"
-                style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+    <section class="sectioncontacto">
+       
 
         <div class="formulario">
             <article>
-                <h3 class="formulario__c"> <strong> Contactanos</strong></h3><br>
+                <h1> 
+                  <span class="contactotitulo"> <strong>Contactenos </strong></span>
+                </h1>
+                <p> Dirección postal: Lanús, Buenos Aires, Argentina</p>
+            
+                <p> Telefonos:</p>
+                
+                <p> 4246-0181 | 1150234071 | Horario de atención: Lunes a viernes de 8:00 a 12:00 y 14:00 a 17:00  </p>
+                
+                <h2 class="contactotitulo">Formulario de contacto</h2> 
                 <p> Para contactarse con nosotros, por favor complete el siguiente formulario.<br>
                     Muchas Gracias.</p>
 
@@ -81,20 +86,20 @@
                 <form action="" method="post">
                     <!-- Label texto visible para el usuario -->
                     <label for=""> Nombre</label>
-                    <input type="text" name="Nombre" id="Nombre" placeholder="Juan">
+                    <input class="recuadro" type="text" name="Nombre" id="Nombre" placeholder="Juan">
                     <br>
 
                     <label for=""> Telefono</label>
-                    <input type="text" name="tel" id="tel" placeholder="1163000000">
+                    <input class="recuadro" type="text" name="tel" id="tel" placeholder="1163000000">
                     <br>
 
                     <label for=""> Email</label>
-                    <input type="text" name="Email" id="Email" placeholder="xxx@xxxx.com">
+                    <input class="recuadro" type="text" name="Email" id="Email" placeholder="xxx@xxxx.com">
                     <br>
                     <br>
 
                     <p> Mensaje:</p> <br>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea class="recuadrotexarea" name="" id="" cols="30" rows="10"></textarea>
                     <br>
                     <button type="button" class="btn btn-verde btn-lg">Enviar</button>
                     <!--<input type="submit" value="Enviar"> -->
@@ -122,17 +127,17 @@
           <ul class="lcontacto">
             <h2 class="box__footer__redes__contacto">Contacto</h2>
             <li>
-              <img class="box__footer__redes__icono" src="../img/ubicacion.png" alt=""> 
+              <img class="box__footer__redes__icono" src="../img/marcador-de-posicion.png" alt="Icono ubicacion"> 
               <h3 class="direccion">Alvear 2972, Remedios de Escalada</h3>
             </li>
   
             <li>
-              <img class="box__footer__redes__icono" src="../img/llamada.png" alt="">
+              <img class="box__footer__redes__icono" src="../img/llamada-telefonica.png" alt="Icono llamada">
               <h3 class="telefono">4246-0181</h3>
             </li>
   
             <li>
-              <img class="box__footer__redes__icono" src="../img/email.png" alt="">
+              <img class="box__footer__redes__icono" src="../img/correo-electronico.png" alt="Icono email">
               <h3 class="email">surseg@yahoo.com</h3>
             </li>
           </ul>

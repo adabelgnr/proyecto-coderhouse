@@ -24,7 +24,9 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  background-color: #000;
+  color: #fff; }
   footer .box__footer {
     display: flex;
     flex-wrap: wrap;
@@ -34,7 +36,8 @@ footer {
     footer .box__footer__redes__contacto {
       flex-direction: column;
       text-decoration: underline;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      color: #fdca00; }
     footer .box__footer__redes__icono {
       width: 18px; }
     footer .box__footer__mapa {
@@ -70,60 +73,12 @@ header {
           color: black;
           padding: 15px 20px; }
       header nav .navbar__item:hover {
-        background-color: #5e9188; }
+        background-color: #fdca00; }
 
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: center; } }
-
-main {
-  display: flex;
-  flex-wrap: wrap; }
-  main .banner {
-    display: flex;
-    flex-wrap: wrap; }
-    main .banner__bempresa {
-      width: 100%;
-      height: 315px; }
-
-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-  section .mapa {
-    width: 700px;
-    height: 350px;
-    padding: 3rem; }
-  section .formulario {
-    font-family: 'Roboto', sans-serif;
-    font-size: large;
-    padding: 3rem; }
-  section .btn-verde {
-    background-color: #5e9188;
-    color: black; }
-
-main {
-  display: flex;
-  flex-wrap: wrap; }
-  main .banner {
-    display: flex;
-    flex-wrap: wrap; }
-    main .banner__bempresa {
-      width: 100%;
-      height: 315px; }
-
-section {
-  display: flex;
-  flex-wrap: wrap; }
-  section .tituloe {
-    font-family: 'Roboto', sans-serif;
-    text-decoration: underline; }
-  section .parrafoe {
-    font-family: 'Roboto', sans-serif;
-    flex-direction: column;
-    font-size: large;
-    font-style: normal; }
 
 /*MEDIA QUERY*/
 /* Estilos Small */
@@ -140,30 +95,37 @@ main {
       width: 100%;
       height: 315px; }
 
-section {
+.sectioncontacto {
   display: flex;
-  flex-wrap: wrap; }
-  section .container {
-    width: 100%;
-    display: flex; }
-    section .container .card {
-      width: 100%;
-      margin: 20px;
-      border-radius: 6px;
-      overflow: hidden;
-      background-color: #fff;
-      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-      transition: all 400ms ease; }
-    section .container .card:hover {
-      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-      transform: translateY(-3%);
-      background-color: #5e9188; }
-    section .container .card img {
-      width: 100%;
-      height: 450px; }
-    section .container .contenido {
-      padding: 15px;
-      text-align: center; }
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  text-align: center;
+  padding: 10rem;
+  width: 95%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  background-color: #fdca00; }
+  .sectioncontacto .formulario {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    padding: 3rem; }
+    .sectioncontacto .formulario .contactotitulo {
+      text-decoration: underline; }
+  .sectioncontacto .btn-verde {
+    background-color: #fff;
+    color: black;
+    border: 2px solid #000; }
+  .sectioncontacto .recuadro {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #000;
+    border-radius: 5px; }
+  .sectioncontacto .recuadrotexarea {
+    border: 2px solid #fdca00; }
 
 /*MEDIA QUERY*/
 @media screen and (max-width: 575.98px) {
@@ -174,7 +136,8 @@ section {
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
   .container {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column;
+    align-items: center; } }
 
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
   .container {
@@ -190,6 +153,78 @@ section {
   .container {
     display: flex;
     flex-direction: row; } }
+
+main {
+  display: flex;
+  flex-wrap: wrap; }
+  main .banner {
+    display: flex;
+    flex-wrap: wrap; }
+    main .banner__bempresa {
+      width: 100%;
+      height: 315px; }
+
+.sectionempresa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  text-align: center;
+  padding: 10rem;
+  width: 95%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  background-color: #fdca00; }
+  .sectionempresa .tituloe {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline; }
+  .sectionempresa .parrafoe {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    font-style: normal;
+    text-align: center; }
+
+main {
+  display: flex;
+  flex-wrap: wrap; }
+  main .banner {
+    display: flex;
+    flex-wrap: wrap; }
+    main .banner__bempresa {
+      width: 100%;
+      height: 315px; }
+
+section {
+  display: flex;
+  flex-wrap: wrap; }
+  section .card-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px; }
+  section .card {
+    width: 100%;
+    margin: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease; }
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+  background-color: #fdca00; }
+
+.contenido {
+  padding: 15px;
+  text-align: center; }
+
+.img {
+  width: 100%; }
 
 main {
   display: flex;
@@ -214,7 +249,7 @@ section {
     section .img__trabajador {
       width: 70%; }
       section .img__trabajador__texto {
-        color: #5e9188;
+        color: black;
         font-size: xx-large;
         font-family: 'Roboto', sans-serif;
         text-decoration: solid; }
@@ -286,7 +321,7 @@ section {
     section .container .card:hover {
       box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
       transform: translateY(-3%);
-      background-color: #5e9188; }
+      background-color: #fdca00; }
     section .container .card img {
       width: 100%;
       height: 320px; }
@@ -303,7 +338,8 @@ section {
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
   .container {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column;
+    align-items: center; } }
 
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
   .container {

@@ -9,6 +9,10 @@ footer {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    background-color: #000;
+    color: #fff;
+   
+    
     .box__footer {
         display: flex;
         flex-wrap: wrap;
@@ -20,10 +24,12 @@ footer {
                 flex-direction: column; 
                 text-decoration: underline;
                 margin-bottom: 1rem;
+                color: #fdca00;
 
             }
             &__icono{
                 width: 18px;
+           
             }
 
         }

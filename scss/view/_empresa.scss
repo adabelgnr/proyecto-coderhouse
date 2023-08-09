@@ -10,17 +10,28 @@ main{
         }
     }
 }
-section{
+.sectionempresa{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    text-align:center;
+    padding: 10rem;
+    width: 95%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background-color: #fdca00;
     .tituloe{
         font-family:'Roboto', sans-serif;
         text-decoration: underline;
     }
     .parrafoe{
         font-family:'Roboto', sans-serif;
-        flex-direction: column;
         font-size: large;
         font-style: normal;
+        text-align:center;
     }
 }
